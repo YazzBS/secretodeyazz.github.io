@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Secreto de Yazz</title>
+
+  <style>
+    body {
+      background-color: black;
+      color: lime;
+      font-family: monospace;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      animation: aparecer 2s forwards;
+      opacity: 0;
+    }
+
+    p {
+      animation: aparecer 4s forwards;
+      opacity: 0;
+    }
+
+    @keyframes aparecer {
+      to { opacity: 1; }
+    }
+
+    .boton {
+      margin-top: 30px;
+      padding: 10px 20px;
+      background: red;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .glitch {
+      color: red;
+      animation: glitch 0.2s infinite;
+    }
+
+    @keyframes glitch {
+      0% { transform: translate(1px, -1px); }
+      50% { transform: translate(-1px, 1px); }
+      100% { transform: translate(1px, 1px); }
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Acceso no autorizado...</h1>
+
+<p>Yazz creó este sitio...</p>
+<p>Pero ya no tiene control.</p>
+
+<p class="glitch">Fanty está aquí.</p>
+
+<button class="boton" onclick="alert('No debiste entrar...')">
+Salir
+</button>
+
+</body>
+</html>
